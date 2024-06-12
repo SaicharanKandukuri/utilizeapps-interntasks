@@ -63,7 +63,7 @@ interface Props {
   setIcon: Dispatch<SetStateAction<LucideIconComponent | null | undefined>>
 }
 
-export function IconSelectorPopOver({ ...props }: Props) { 
+function IconSelectorPopOver({ ...props }: Props) { 
   const [page, setPage] = useState(0);
   const [pageCount, setPageCount] = useState(0);
 
@@ -106,7 +106,7 @@ export function IconSelectorPopOver({ ...props }: Props) {
 /**
  * Old Icon Selector with dialog prototype before reading problem statement
  */
-export function IconSelectorDialog({ ...props }: Props) {
+function IconSelectorDialog({ ...props }: Props) {
   const [page, setPage] = useState(0);
   const [pageCount, setPageCount] = useState(0);
 
